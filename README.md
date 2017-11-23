@@ -47,30 +47,116 @@ ________________________________________________________________________________
 ## Usage
 
 ### Input
-
+- Mu: Drift coefficient of Y (function handle)
+- Eta: Diffusion coefficient of Y (function handle)
+- Phi  -  Function mapping Y to VIX (function handle or symbolic function)
+       Y0  -  Initial value of Y (scalar)
+        K  -  Strike values (vector)
+        T  -  Maturity (scalar)
+    Order  -  Expansion order (integer between 0 and 4)
 ### Output
 
 ________________________________________________________________________________________________________________________________________
 ## Examples
 
-- Heston model
-
-```
+### Heston model
+#### MATLAB code
+```matlab
+% Setting model parameters
 Kappa=3;
 Theta=0.04;
 Epsilon=0.5;
 Y0=0.035;
-T=1/48;
+% Drift
 Mu=@(y) Kappa*(Theta-y);
+% Diffusion
 Eta=@(y) Epsilon*sqrt(y);
+% Function Phi
 Tau=30/365;
 a=(1-exp(-Kappa*Tau))/(Kappa*Tau);
 b=Theta*(1-a);
 Phi=@(y) sqrt(a*y+b);
+% Setting maturity and strikes
+T=1/48;
 K=.13:.01:.25;
+% Computing approximate implied volatilities
 Sigma2=viximpv(Mu,Eta,Phi,Y0,K,T,2);
 Sigma3=viximpv(Mu,Eta,Phi,Y0,K,T,3);
 Sigma4=viximpv(Mu,Eta,Phi,Y0,K,T,4);
-plot(K,[Sigma2; Sigma3; Sigma4]);
+% Plotting
+plot(K,[Sigma2; Sigma3; Sigma4],'LineWidth',2);
+axis tight;
+grid on;
 ```
+<p align="center">
+<img src="resources/heston.png"/>
+</p>
+
+### Mean-reverting CEV model
+
+#### MATLAB code
+```matlab
+% Setting model parameters
+Kappa=3;
+Theta=0.04;
+Epsilon=1.5;
+Y0=0.035;
+% Drift
+Mu=@(y) Kappa*(Theta-y);
+% Diffusion
+Eta=@(y) Epsilon*y;
+% Phi
+Tau=30/365;
+a=(1-exp(-Kappa*Tau))/(Kappa*Tau);
+b=Theta*(1-a);
+Phi=@(y) sqrt(a*y+b);
+% Setting maturity and strikes
+T=1/48;
+K=.13:.01:.25;
+% Computing approximate implied volatilities
+Sigma2=viximpv(Mu,Eta,Phi,Y0,K,T,2);
+Sigma3=viximpv(Mu,Eta,Phi,Y0,K,T,3);
+Sigma4=viximpv(Mu,Eta,Phi,Y0,K,T,4);
+% Plotting
+plot(K,[Sigma2; Sigma3; Sigma4],'LineWidth',2);
+axis tight;
+grid on;
+```
+<p align="center">
+<img src="resources/mrcev.png"/>
+</p>
+
+### Exp-OU model
+
+#### MATLAB code
+```matlab
+% Setting model parameters
+Lambda=10;
+Theta=0.02;
+Epsilon=3.5;
+Y0=-3.3;
+% Drift
+Mu=@(y) Lambda*(log(Theta)-y);
+% Diffusion
+Eta=@(y) Epsilon;
+% Phi
+syms x y;
+Tau=30/365;
+g=exp(exp(-Lambda*x).*y+log(Theta)*(1-exp(-Lambda*x))+Epsilon^2/(4*Lambda)*(1-exp(-2*Lambda*x)));
+Phi=(1/sqrt(Tau))*sqrt(int(g,x,0,Tau));
+% Setting maturity and strikes
+T=1/48;
+K=.13:.01:.25;
+% Computing approximate implied volatilities
+Sigma2=viximpv(Mu,Eta,Phi,Y0,K,T,2);
+Sigma3=viximpv(Mu,Eta,Phi,Y0,K,T,3);
+Sigma4=viximpv(Mu,Eta,Phi,Y0,K,T,4);
+% Plotting
+plot(K,[Sigma2; Sigma3; Sigma4],'LineWidth',2);
+axis tight;
+grid on;
+```
+<p align="center">
+<img src="resources/expou.png"/>
+</p>
 
