@@ -14,8 +14,13 @@ November 2017<br>
 ________________________________________________________________________________________________________________________________________
 ## Getting Started
 
-This toolbox computes approximate values of the Black & Scholes implied volatility of VIX options using the perturbative technique described in <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2942262">this paper</a>. The modelling setup requires that the VIX index dynamics is explicitly computable as a smooth transformation of a purely diffusive, one-dimensional Markov process Y. Specifically:
+This toolbox computes approximate values of the Black & Scholes implied volatility of VIX options using a perturbative technique applied to the infinitesimal generator of the underlying process. The modelling setup requires that the VIX index dynamics is explicitly computable as a smooth transformation φ of a purely diffusive, one-dimensional Markov process Y. Specifically:
 
+<p align="center">
+<img src="resources/eq1.PNG"/><br>       
+<img src="resources/eq2.PNG"/>
+</p>
+where W denots a Brownian motion. More details can found in <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2942262">this paper</a>.
 
 Please note that this tool is <b>not a standalone software</b>, but it fully relies on the MATLAB suite.
 
