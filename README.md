@@ -59,6 +59,7 @@ ________________________________________________________________________________
 - `K`  -  Strike values (vector)
 - `T`  -  Maturity (scalar)
 - `Order`  -  Expansion order (integer between 0 and 4)
+
 ### Output
 - `Sigma`: Approximate VIX implied volatility
 - `Futures`: Approximate VIX futures price
