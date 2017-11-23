@@ -89,7 +89,7 @@ axis tight;
 grid on;
 ```
 <p align="center">
-<img src="resources/heston.png"/>
+<img src="resources/heston.PNG"/>
 </p>
 
 ### Mean-reverting CEV model
@@ -123,7 +123,7 @@ axis tight;
 grid on;
 ```
 <p align="center">
-<img src="resources/mrcev.png"/>
+<img src="resources/mrcev.PNG"/>
 </p>
 
 ### Exp-OU model
@@ -157,6 +157,6 @@ axis tight;
 grid on;
 ```
 <p align="center">
-<img src="resources/expou.png"/>
+<img src="resources/expou.PNG"/>
 </p>
 
