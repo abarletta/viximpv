@@ -68,7 +68,6 @@ ________________________________________________________________________________
 ## Examples
 
 ### Heston model
-#### MATLAB code
 ```matlab
 % Setting model parameters
 Kappa=3;
@@ -101,8 +100,6 @@ grid on;
 </p>
 
 ### Mean-reverting CEV model
-
-#### MATLAB code
 ```matlab
 % Setting model parameters
 Kappa=3;
@@ -135,8 +132,6 @@ grid on;
 </p>
 
 ### Exp-OU model
-
-#### MATLAB code
 ```matlab
 % Setting model parameters
 Lambda=10;
