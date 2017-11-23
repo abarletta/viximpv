@@ -1,8 +1,8 @@
 ________________________________________________________________________________________________________________________________________
 ## Latest downloads
 
-- [MATLAB Toolbox installer (recommended)](https://github.com/abarletta/rndfittool/releases/download/v17.10/RND.Fitting.Tool.v17.10.mlappinstall)
-- [Zip archive containing all codes](https://github.com/abarletta/rndfittool/releases/download/v17.10/RND.Fitting.Tool.v17.10.zip)
+- [MATLAB Toolbox installer (recommended)](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.mltbx)
+- [Zip archive containing all codes](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.zip)
 
 ________________________________________________________________________________________________________________________________________
 
