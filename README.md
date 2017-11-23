@@ -48,17 +48,20 @@ There are two options to install the VIX Implied Volatility Toolbox on your mach
 
 ________________________________________________________________________________________________________________________________________
 ## Usage
-
+```matlab
+[Sigma,Futures]=VIXIMPV(Mu,Eta,Phi,Y0,K,T,Order)
+```
 ### Input
-- Mu: Drift coefficient of Y (function handle)
-- Eta: Diffusion coefficient of Y (function handle)
-- Phi  -  Function mapping Y to VIX (function handle or symbolic function)
-       Y0  -  Initial value of Y (scalar)
-        K  -  Strike values (vector)
-        T  -  Maturity (scalar)
-    Order  -  Expansion order (integer between 0 and 4)
+- `Mu`: Drift coefficient of Y (function handle)
+- `Eta`: Diffusion coefficient of Y (function handle)
+- `Phi`  -  Function mapping Y to VIX (function handle or symbolic function)
+- `Y0`  -  Initial value of Y (scalar)
+- `K`  -  Strike values (vector)
+- `T`  -  Maturity (scalar)
+- `Order`  -  Expansion order (integer between 0 and 4)
 ### Output
-
+- `Sigma`: Approximate VIX implied volatility
+- `Futures`: Approximate VIX futures price
 ________________________________________________________________________________________________________________________________________
 ## Examples
 
