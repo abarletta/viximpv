@@ -1,4 +1,3 @@
-________________________________________________________________________________________________________________________________________
 ## Latest downloads
 
 - [MATLAB Toolbox installer (recommended)](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.mltbx)
