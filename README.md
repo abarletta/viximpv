@@ -20,7 +20,7 @@ This toolbox computes approximate values of the Black & Scholes implied volatili
 <img src="resources/eq1.PNG"/><br>       
 <img src="resources/eq2.PNG"/>
 </p>
-where <i>W</i> denots a Brownian motion. More details can found in <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2942262">this paper</a>. Please note that this tool is <b>not a standalone software</b>, but it fully relies on the MATLAB suite.
+where <i>W</i> denots a Brownian motion. More details can be found in <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2942262">this paper</a>. Please note that this tool is <b>not a standalone software</b>, but it fully relies on the MATLAB suite.
 
 ### Prerequisites
 
@@ -48,6 +48,7 @@ There are two options to install the VIX Implied Volatility Toolbox on your mach
 
 ________________________________________________________________________________________________________________________________________
 ## Usage
+### Syntax
 ```matlab
 [Sigma,Futures]=VIXIMPV(Mu,Eta,Phi,Y0,K,T,Order)
 ```
