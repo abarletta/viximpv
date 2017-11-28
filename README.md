@@ -54,11 +54,11 @@ ________________________________________________________________________________
 ### Input
 - `Mu`: Drift coefficient of Y (function handle)
 - `Eta`: Diffusion coefficient of Y (function handle)
-- `Phi`  -  Function mapping Y to VIX (function handle or symbolic function)
-- `Y0`  -  Initial value of Y (scalar)
-- `K`  -  Strike values (vector)
-- `T`  -  Maturity (scalar)
-- `Order`  -  Expansion order (integer between 0 and 4)
+- `Phi`:  Function mapping Y to VIX (function handle or symbolic function)
+- `Y0`:  Initial value of Y (scalar)
+- `K`:  Strike values (vector)
+- `T`:  Maturity (scalar)
+- `Order`:  Expansion order (integer between 0 and 4)
 
 ### Output
 - `Sigma`: Approximate VIX implied volatility
