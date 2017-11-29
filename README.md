@@ -67,7 +67,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________________
 ## Examples
 
-Get all examples as MATLAB script [at this link](https://github.com/abarletta/viximpv/blob/master/resources/examples.m).
+All the examples provided below are contained in [this MATLAB script](https://github.com/abarletta/viximpv/blob/master/resources/examples.m).
 
 ### Heston model
 
@@ -108,7 +108,7 @@ grid on;
 ```
 <p align="center">
 <img src="resources/heston.PNG"/><br>
-<b>Figure: </b>Implied volatility as function of moneyness.
+<b>Figure: </b>Implied volatility as function of the log-moneyness.
 </p>
 
 ### Mean-reverting CEV model
@@ -151,7 +151,7 @@ grid on;
 ```
 <p align="center">
 <img src="resources/mrcev.PNG"/><br>
-<b>Figure: </b>Implied volatility as function of moneyness.
+<b>Figure: </b>Implied volatility as function of the log-moneyness.
 </p>
 
 ### Exp-OU model
@@ -193,6 +193,6 @@ grid on;
 ```
 <p align="center">
 <img src="resources/expou.PNG"/><br>
-  <b>Figure: </b>Implied volatility as function of moneyness.
+  <b>Figure: </b>Implied volatility as function of the log-moneyness.
 </p>
 
