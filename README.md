@@ -69,6 +69,8 @@ ________________________________________________________________________________
 
 ### Heston model
 
+#### Definition
+
 <p align="center">
 <img src="resources/eqHESTON.PNG"/>
 </p>
@@ -108,6 +110,8 @@ grid on;
 </p>
 
 ### Mean-reverting CEV model
+
+#### Definition
 
 <p align="center">
 <img src="resources/eqMRCEV.PNG"/>
@@ -149,6 +153,8 @@ grid on;
 </p>
 
 ### Exp-OU model
+
+#### Definition
 
 <p align="center">
 <img src="resources/eqEXPOU.PNG"/>
