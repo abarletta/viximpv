@@ -68,6 +68,11 @@ ________________________________________________________________________________
 ## Examples
 
 ### Heston model
+
+<p align="center">
+<img src="resources/eqHESTON.PNG"/>
+</p>
+
 ```matlab
 % Setting model parameters
 Kappa=3;
@@ -100,16 +105,22 @@ grid on;
 </p>
 
 ### Mean-reverting CEV model
+
+<p align="center">
+<img src="resources/eqMRCEV.PNG"/>
+</p>
+
 ```matlab
 % Setting model parameters
 Kappa=3;
 Theta=0.04;
 Epsilon=1.5;
+Delta=1;
 Y0=0.035;
 % Drift
 Mu=@(y) Kappa*(Theta-y);
 % Diffusion
-Eta=@(y) Epsilon*y;
+Eta=@(y) Epsilon*(y.^Delta);
 % Phi
 Tau=30/365;
 a=(1-exp(-Kappa*Tau))/(Kappa*Tau);
@@ -132,6 +143,11 @@ grid on;
 </p>
 
 ### Exp-OU model
+
+<p align="center">
+<img src="resources/eqEXPOU.PNG"/>
+</p>
+
 ```matlab
 % Setting model parameters
 Lambda=10;
