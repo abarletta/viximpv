@@ -73,6 +73,8 @@ ________________________________________________________________________________
 <img src="resources/eqHESTON.PNG"/>
 </p>
 
+#### MATLAB code
+
 ```matlab
 % Setting model parameters
 Kappa=3;
@@ -101,7 +103,8 @@ axis tight;
 grid on;
 ```
 <p align="center">
-<img src="resources/heston.PNG"/>
+<img src="resources/heston.PNG"/><br>
+<b>Figure: </b>Implied volatility as function of moneyness.
 </p>
 
 ### Mean-reverting CEV model
@@ -109,6 +112,8 @@ grid on;
 <p align="center">
 <img src="resources/eqMRCEV.PNG"/>
 </p>
+
+#### MATLAB code
 
 ```matlab
 % Setting model parameters
@@ -139,7 +144,8 @@ axis tight;
 grid on;
 ```
 <p align="center">
-<img src="resources/mrcev.PNG"/>
+<img src="resources/mrcev.PNG"/><br>
+<b>Figure: </b>Implied volatility as function of moneyness.
 </p>
 
 ### Exp-OU model
@@ -147,6 +153,8 @@ grid on;
 <p align="center">
 <img src="resources/eqEXPOU.PNG"/>
 </p>
+
+#### MATLAB code
 
 ```matlab
 % Setting model parameters
@@ -176,6 +184,7 @@ axis tight;
 grid on;
 ```
 <p align="center">
-<img src="resources/expou.PNG"/>
+<img src="resources/expou.PNG"/><br>
+  <b>Figure: </b>Implied volatility as function of moneyness.
 </p>
 
