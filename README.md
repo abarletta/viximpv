@@ -67,6 +67,8 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________________
 ## Examples
 
+Get all examples as MATLAB script [at this link](https://github.com/abarletta/viximpv/blob/master/resources/examples.m).
+
 ### Heston model
 
 #### Definition
