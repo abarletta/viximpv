@@ -79,17 +79,17 @@ ________________________________________________________________________________
 
 ```matlab
 % Setting model parameters
-Kappa=3;
+Lambda=3;
 Theta=0.04;
 Epsilon=0.5;
 Y0=0.035;
 % Drift
-Mu=@(y) Kappa*(Theta-y);
+Mu=@(y) Lambda*(Theta-y);
 % Diffusion
 Eta=@(y) Epsilon*sqrt(y);
 % Function Phi
 Tau=30/365;
-a=(1-exp(-Kappa*Tau))/(Kappa*Tau);
+a=(1-exp(-Lambda*Tau))/(Lambda*Tau);
 b=Theta*(1-a);
 Phi=@(y) sqrt(a*y+b);
 % Setting maturity and strikes
@@ -121,18 +121,18 @@ grid on;
 
 ```matlab
 % Setting model parameters
-Kappa=3;
+Lambda=3;
 Theta=0.04;
 Epsilon=1.5;
 Delta=1;
 Y0=0.035;
 % Drift
-Mu=@(y) Kappa*(Theta-y);
+Mu=@(y) Lambda*(Theta-y);
 % Diffusion
 Eta=@(y) Epsilon*(y.^Delta);
 % Phi
 Tau=30/365;
-a=(1-exp(-Kappa*Tau))/(Kappa*Tau);
+a=(1-exp(-Lambda*Tau))/(Lambda*Tau);
 b=Theta*(1-a);
 Phi=@(y) sqrt(a*y+b);
 % Setting maturity and strikes
