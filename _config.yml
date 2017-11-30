@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: viximpv
 description: VIX Implied Volatility Toolbox (MATLAB)
+show_downloads:true
