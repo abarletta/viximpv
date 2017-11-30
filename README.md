@@ -4,6 +4,8 @@ ________________________________________________________________________________
 
 ## Latest downloads
 
+<li><a href="https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.mltbx">Download <strong>MATLAB Toolbox Installer (recommended)</strong></a></li>
+<br>
 - [MATLAB Toolbox installer (recommended)](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.mltbx)
 - [Zip archive containing all codes](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.zip)
 
