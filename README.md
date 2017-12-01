@@ -4,19 +4,20 @@ ________________________________________________________________________________
 
 ## Latest downloads
 
-<div class="wrapper">
-<header>
 <ul>
    <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
    <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
    <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
 </ul>
-</header>
-</div> 
 
 <br>
+
+<div class="wrapper">
+<header>
 - [MATLAB Toolbox installer (recommended)](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.mltbx)
 - [Zip archive containing all codes](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.zip)
+</header>
+</div> 
 
 ________________________________________________________________________________________________________________________________________
 
