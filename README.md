@@ -1,20 +1,12 @@
 # VIX Implied Volatility Toolbox (MATLAB)
 
-________________________________________________________________________________________________________________________________________
-
+***
 ## Latest downloads
 
 - [MATLAB Toolbox installer (recommended)](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.mltbx)
 - [Zip archive containing all codes](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.zip)
 
-________________________________________________________________________________________________________________________________________
-
-<b>Current version</b> <br>
-November 2017<br>
-<b>Author</b> <br>
-[Andrea Barletta](http://pure.au.dk/portal/en/persons/id(e161f76b-35b6-4903-b768-e8b172cbede5).html)<br>
-
-________________________________________________________________________________________________________________________________________
+***
 ## Getting Started
 
 This toolbox computes approximate values of the Black & Scholes implied volatility of VIX options using a perturbative technique applied to the infinitesimal generator of the underlying process. The modelling setup requires that the VIX index dynamics is explicitly computable as a smooth transformation <i>φ</i> of a purely diffusive, one-dimensional Markov process Y. Specifically:
@@ -49,7 +41,7 @@ There are two options to install the VIX Implied Volatility Toolbox on your mach
 - Type <code>rndfittool</code> to run the tool.
 
 
-________________________________________________________________________________________________________________________________________
+***
 ## Usage
 ### Syntax
 ```matlab
@@ -68,7 +60,7 @@ ________________________________________________________________________________
 - `Sigma`: Approximate VIX implied volatility
 - `Futures`: Approximate VIX futures price
 
-________________________________________________________________________________________________________________________________________
+***
 ## Examples
 
 All the examples provided below are contained in [this MATLAB script](https://github.com/abarletta/viximpv/blob/master/resources/examples.m).
