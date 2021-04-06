@@ -1,20 +1,11 @@
-# VIX Implied Volatility Toolbox (MATLAB)
-
-________________________________________________________________________________________________________________________________________
+<br>
 
 ## Latest downloads
 
-- [MATLAB Toolbox installer (recommended)](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.mltbx)
-- [Zip archive containing all codes](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.zip)
+[MATLAB Toolbox installer (recommended)](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.mltbx)<br>
+[Zip archive containing all codes](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.zip)<br>
 
-________________________________________________________________________________________________________________________________________
-
-<b>Current version</b> <br>
-November 2017<br>
-<b>Author</b> <br>
-[Andrea Barletta](http://pure.au.dk/portal/en/persons/id(e161f76b-35b6-4903-b768-e8b172cbede5).html)<br>
-
-________________________________________________________________________________________________________________________________________
+***
 ## Getting Started
 
 This toolbox computes approximate values of the Black & Scholes implied volatility of VIX options using a perturbative technique applied to the infinitesimal generator of the underlying process. The modelling setup requires that the VIX index dynamics is explicitly computable as a smooth transformation <i>φ</i> of a purely diffusive, one-dimensional Markov process Y. Specifically:
@@ -35,21 +26,21 @@ This code has been tested on MATLAB R2017a but it should work on any version of 
 
 There are two options to install the VIX Implied Volatility Toolbox on your machine.
 
-#### Installing rndfittool as MATLAB App (recommended)
+#### Installing viximpv as MATLAB App (recommended)
 - Download the [MATLAB Toolbox installer](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.mltbx).
 - Double-click on the file to start the installation process.
 - If the double-click does not work you may alternatively open the file by dragging it into the MATLAB command window.
-- After the installation you can run the main function _viximpv_.
+- Call the main function by _viximpv_.
 - If the installation does not work switch to the next method.
 
-#### Installing rdnfittool through zip archive
+#### Installing viximpv through zip archive
 - Download the [zip archive](https://github.com/abarletta/viximpv/releases/download/17.11/VIX.Implied.Volatility.zip) containing all the necessary resources.
 - Extract the archive contents into a local folder.
 - Set the folder containing the extracted file as MATLAB current folder or, alternatively, add it to the MATLAB path list. 
-- Type <code>rndfittool</code> to run the tool.
+- Call the main function by _viximpv_.
 
 
-________________________________________________________________________________________________________________________________________
+***
 ## Usage
 ### Syntax
 ```matlab
@@ -68,7 +59,7 @@ ________________________________________________________________________________
 - `Sigma`: Approximate VIX implied volatility
 - `Futures`: Approximate VIX futures price
 
-________________________________________________________________________________________________________________________________________
+***
 ## Examples
 
 All the examples provided below are contained in [this MATLAB script](https://github.com/abarletta/viximpv/blob/master/resources/examples.m).
